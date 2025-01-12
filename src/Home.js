@@ -1,11 +1,12 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Product from './Product'; // Import the Product component
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Asigură funcționalitatea JS pentru Bootstrap
+import Product from './Product'; // Importă componenta Product
 
 function Home({ addToCart }) {
   const products = [
     {
-      image: 'SamsungS24Pro.jpg',
+      images: ['SamsungS24Pro.jpg', 'SamsungS24Pro1.jpg', 'SamsungS24Pro2.jpg', 'SamsungS24Pro3.jpg'],
       title: 'Samsung S24 Ultra',
       description: [
         { label: 'Model procesor', value: 'Qualcomm Snapdragon 8 Gen 3' },
@@ -19,7 +20,7 @@ function Home({ addToCart }) {
       price: 5500,
     },
     {
-      image: 'HuaweiP60Pro.jpg',
+      images: ['HuaweiP60Pro.jpg', 'HuaweiP60Pro1.jpg', 'HuaweiP60Pro2.jpg','HuaweiP60Pro3.jpg'], 
       title: 'Huawei P60 Pro',
       description: [
         { label: 'Model procesor', value: 'Qualcomm Snapdragon 8 Plus Gen 1' },
@@ -33,7 +34,7 @@ function Home({ addToCart }) {
       price: 5600,
     },
     {
-      image: 'Iphone16Pro.jpg',
+      images: ['Iphone16Pro.jpg', 'Iphone16Pro1.jpg', 'Iphone16Pro2.jpg'], 
       title: 'Iphone 16 Pro',
       description: [
         { label: 'Sistem de operare', value: 'iOS' },
@@ -44,6 +45,19 @@ function Home({ addToCart }) {
         { label: 'Memorie RAM', value: '8 GB' },
       ],
       price: 7200,
+    },
+    {
+      images: ['SONYXperia1.jpg', 'SONYXperia11.jpg', 'SONYXperia12.jpg'], 
+      title: 'SONY Xperia 1 VI 5G',
+      description: [
+        { label: 'Sistem de operare', value: 'Android' },
+        { label: 'Numar nuclee', value: '16' },
+        { label: 'Dimensiune ecran', value: '6.5 inch' },
+        { label: 'Rezolutie (pixeli)', value: '2340 x 1080' },
+        { label: 'Memorie interna', value: '256 GB' },
+        { label: 'Memorie RAM', value: '12 GB' },
+      ],
+      price: 6500,
     },
   ];
 
@@ -63,11 +77,11 @@ function Home({ addToCart }) {
             {products.map((product, index) => (
               <Product
                 key={index}
-                image={product.image}
+                images={product.images}
                 title={product.title}
                 description={product.description}
                 price={product.price}
-                addToCart={() => addToCart(product)} // Pasăm produsul
+                addToCart={() => addToCart(product)}
               />
             ))}
           </div>
