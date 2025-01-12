@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/DAWProject/static/css/main.8144124f.css",
+    "main.js": "/DAWProject/static/js/main.a35811dc.js",
+    "index.html": "/DAWProject/index.html",
+    "main.8144124f.css.map": "/DAWProject/static/css/main.8144124f.css.map",
+    "main.a35811dc.js.map": "/DAWProject/static/js/main.a35811dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8144124f.css",
+    "static/js/main.a35811dc.js"
+  ]
+}
