@@ -15,7 +15,7 @@ Acest site este ideal pentru pasionații de tehnologie care doresc să compare m
 
 -Clonarea proiectului:
 
-git clone https://github.com/utilizator/proiect-magazin-telefoane.git
+git clone https://github.com/VulpoiuPetru/DAWProject.git
 cd proiect-magazin-telefoane
 
 -Instalarea pachetelor necesare: Asigurați-vă că aveți Node.js instalat pe sistemul dvs. Apoi rulați comanda:
