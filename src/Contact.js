@@ -12,6 +12,24 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Asigură-te că toate câmpurile sunt completate
+    if (!name || !email || !message || !subject || !rating) {
+      alert('Please fill out all fields before submitting.');
+      return;
+    }
+
+    // Afișează mesajul de succes
+    alert('Multumim pentru review!');
+
+    // Opțional: Resetează câmpurile după trimitere
+    setName('');
+    setEmail('');
+    setMessage('');
+    setSubject('');
+    setRating('');
+    setSubscribe(false);
+
     // Handle form submission logic here
     console.log('Feedback submitted:', { name, email, message, subject, rating, subscribe });
   };

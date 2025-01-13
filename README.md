@@ -1,5 +1,8 @@
 # DAWProject
 
+Pentru a accesa site-ul:
+https://vulpoiupetru.github.io/DAWProject/
+
 ## Magazin de Telefoane Online
 Scopul site-ului
 Magazinul de Telefoane Online este o platformă modernă care oferă utilizatorilor acces la cele mai noi și performante modele de telefoane mobile. Scopul site-ului este:

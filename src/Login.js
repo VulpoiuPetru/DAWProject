@@ -42,7 +42,7 @@ function Login() {
   return (
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
       <h1>Google Login Demo</h1>
-      <GoogleOAuthProvider clientId="521024946631-ibsr49ji05akim0gef1bddvtkm5f45ho.apps.googleusercontent.com">
+      <GoogleOAuthProvider clientId="807593565779-k9jp768b32fvr8i1v1muabaatrvrlg95.apps.googleusercontent.com">
         {user ? (
           <div>
             <h3>User Info</h3>
